@@ -3,7 +3,7 @@
 This is a Jade and Sass starter project using gulp for task automation.
 
 ## Note
-Jade has been renamed to Pug so may want to use the updated [project](https://github.com/azemoh/gulp-pug-sass-starter/). Use this if you still require Jade support.
+Jade has been renamed to Pug so may want to use the updated [project](https://github.com/azemoh/gulp-pug-sass-seed/). Use this if you still require Jade support.
 
 
 ### This project uses...
