@@ -19,13 +19,21 @@ var settings = {
 };
 
 /**
+ * De-caching function for Data files
+ */
+function requireUncached( $module ) {
+    delete require.cache[require.resolve( $module )];
+    return require( $module );
+}
+
+/**
  * Compile .jade files and pass in data from json file
  * matching file name. index.jade - index.jade.json
  */
 gulp.task('jade', function () {
 	return gulp.src('*.jade')
 		.pipe(data(function (file) {
-			return require('./_data/' + path.basename(file.path) + '.json');
+			return requireUncached('./_data/' + path.basename(file.path) + '.json');
 		}))
 		.pipe(jade())
 		.pipe(gulp.dest(settings.publicDir));
@@ -72,7 +80,7 @@ gulp.task('sass', function () {
  */
 gulp.task('watch', function () {
 	gulp.watch(settings.sassDir + '/**', ['sass']);
-	gulp.watch(['*.jade', '**/*.jade'], ['jade-rebuild']);
+	gulp.watch(['*.jade', '**/*.jade', '**/*.json'], ['jade-rebuild']);
 });
 
 /**
