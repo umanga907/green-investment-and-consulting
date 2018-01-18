@@ -1,16 +1,31 @@
 /*	FONTS
 ------------------------*/
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900|Raleway:300,400,500,700);
+//Variables
+
+$playfair :  'Playfair Display', serif;
+$raleway : 'Raleway', sans-serif;
+
+//Colors
+$fresh: #4ABDAC;
+$grey: #DFDCE3;
+$chamelion: #FC4A1A ;
+$orange: #F78733;
+
 
 /*	TYPOGRAPHY
 –––––––––––––––––––––––––––*/
 body {
-	font-family: 'Raleway', Arial, sans-serif, ;
-	color: #555;
+	font-family: $raleway;
+	color: #333;
 	font-size: 100%;
 	line-height: 1.5;
-	background-color: #f2f2f2;
+	background-color: #fff;
 	margin: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: $playfair;
+	font-weight: 700;
 }
 
 /* ------ Normalize ----- */

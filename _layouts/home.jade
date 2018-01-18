@@ -1,13 +1,142 @@
 doctype html
 html
 	head
-		title= title
+		title	Green Investment & Consulting
 		meta(charset="utf-8")
 		meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1")
+		link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous")
+		link(href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900|Raleway:300,400,500,700" rel="stylesheet")
+
 		block head_end
 	
 	body
-		block content
-		
-		script(type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js")
+		main 
+			include ../_partials/header.jade
+			section.banner(style='background-image: url(https://i.imgur.com/NC9JxmI.png);')
+				.banner-cont
+					p.banner-cont__title-sm SERVICE FROM THE EXPERTS
+					h1.banner-cont__title Green Investment & 
+						br
+						|Consulting
+					a(href="javascript:").btn.learn-more LEARN MORE
+			section.sectors.text-center
+				.container
+					h2.title WE INVEST IN THREE SECTORS
+					.row 
+						.col-md-4.sector
+							i.fa.fa-line-chart.sector__icon
+							h4.sector__title Shares
+							p.sector__info Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						.col-md-4.sector
+							i.fa.fa-shield.sector__icon
+							h4.sector__title Debentures
+							p.sector__info Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.	
+						.col-md-4.sector
+							i.fa.fa-leaf.sector__icon
+							h4.sector__title Agriculture
+							p.sector__info Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.		
+							
+			section.break-content
+				.container 
+					.row.align-items-center
+						.col-md-4
+							h2 Help & advice for employers and employees
+						.col-md-offset-1.col-md-7
+							p Lorem ipsum dolor sit amet, consectetur cing elit. Suspe ndisse suscipit sagittis leo sit met condimentum estibulum issim posuere cubilia Curae Suspendisse at consectetur massa. Curabitur non ipsum nisinec. Suspe ndisse suscipit sagittis leo sit met condimentum estibulum issim posuere cubilia Curae Suspendisse at consectetur massa. Curabitur non ipsum nisinec
+			
+			section.services(style="background-image:url(https://i.imgur.com/SCO0IVI.png);")
+				.container
+					h2.title OUR SERVICE
+					.row 
+						.col-md-3.service
+							i.service__icon.fa.fa-area-chart.fresh
+							h5.service__title Market Research 
+							p.service__info Lorem ipsum dolor sit amet, consectetur cing elit. Suspe ndisse suscipit sagittis
+						.col-md-3.service
+							i.service__icon.fa.fa-bar-chart-o.grey
+							h5.service__title Service Management 
+							p.service__info Lorem ipsum dolor sit amet, consectetur cing elit. Suspe ndisse suscipit sagittis	
+						.col-md-3.service
+							i.service__icon.fa.fa-gears.chamelion
+							h5.service__title Operation Management
+							p.service__info Lorem ipsum dolor sit amet, consectetur cing elit. Suspe ndisse suscipit sagittis		
+						.col-md-3.service
+							i.service__icon.fa.fa-users.orange
+							h5.service__title Human Resource 
+							p.service__info Lorem ipsum dolor sit amet, consectetur cing elit. Suspe ndisse suscipit sagittis		
+						.col-md-3.service
+							i.service__icon.fa.fa-line-chart.fresh
+							h5.service__title Management Consulting
+							p.service__info Lorem ipsum dolor sit amet, consectetur cing elit. Suspe ndisse suscipit sagittis		
+						.col-md-3.service
+							i.service__icon.fa.fa-laptop.grey
+							h5.service__title Service Trading
+							p.service__info Lorem ipsum dolor sit amet, consectetur cing elit. Suspe ndisse suscipit sagittis	
+						.col-md-3.service
+							i.service__icon.fa.fa-industry.chamelion
+							h5.service__title Financial Service 
+							p.service__info Lorem ipsum dolor sit amet, consectetur cing elit. Suspe ndisse suscipit sagittis		
+						.col-md-3.service
+							i.service__icon.fa.fa-institution.orange
+							h5.service__title Advisory Service
+							p.service__info Lorem ipsum dolor sit amet, consectetur cing elit. Suspe ndisse suscipit sagittis		
+			
+			section.teams
+				.container
+					h2.title TEAM OF PROFESSIONALS
+					.row 
+						.col-md-6
+							.team 
+								.team__photo
+									img(src="https://i.imgur.com/JKwYve2.png")
+								.team__info
+									h2 Maya Bara
+									span Founder, CEO 
+									p Lorem ipsum dolor sit amet, consectetur cing elit. Suspe ndisse suscipit sagittis leo sit met condimentum estibulum issimLorem ipsum dolor sit amet, consectetur cing elit. Suspe ndisse suscipit sagittis leo sit met condimentum estibulum issim
+						.col-md-6
+							.team 
+								.team__photo
+									img(src="https://i.imgur.com/Gr3QzZf.png")
+								.team__info
+									h2 Charlie Woods
+									span Co Founder, Director
+									p Lorem ipsum dolor sit amet, consectetur cing elit. Suspe ndisse suscipit sagittis leo sit met condimentum estibulum issimLorem ipsum dolor sit amet, consectetur cing elit. Suspe ndisse suscipit sagittis leo sit met condimentum estibulum issim			
+					
+					a.view-more.btn	VIEW MORE
+			
+			section.testimonials(style="background-image:url('https://i.imgur.com/A3pYp4Y.png');")
+				h2.title Testimonials 
+				.container
+					.row 
+						.col-md-4.testimonial 
+							.testimonial__photo
+								img(src="https://i.imgur.com/OZgNyb8.png")
+							p.testimonial__msg Lorem ipsum dolor sit amet, consectetur cing elit. Suspe ndisse suscipit sagittis leo sit met condimentum estibulum issim	
+							span Tim Cook, Apple
+						.col-md-4.testimonial 
+							.testimonial__photo
+								img(src="https://i.imgur.com/BUbsec8.png")
+							p.testimonial__msg Lorem ipsum dolor sit amet, consectetur cing elit. Suspe ndisse suscipit sagittis leo sit met condimentum estibulum issim	
+							span Satya Nadella, Microsoft	
+						.col-md-4.testimonial 
+							.testimonial__photo
+								img(src="https://i.imgur.com/Dg92Mqm.png")
+							p.testimonial__msg Lorem ipsum dolor sit amet, consectetur cing elit. Suspe ndisse suscipit sagittis leo sit met condimentum estibulum issim	
+							span Sundar Pichai, Google
+			
+			section.cta
+				.container 
+					.row.newsletter 
+						.col-md-6
+							h2 Sign Up for updates
+						.col-md-6 
+							.newsletter__input-group
+								input(type="text" class="form-control newsletter__input" placeholder="Enter your email")
+								button.btn.newsletter__btn SEND
+								
+			include ../_partials/footer.jade					
+		script(script src="https://use.fontawesome.com/7d57fb3b32.js")
+		script(src="https://code.jquery.com/jquery-3.1.1.slim.min.js"  integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous")
+		script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous")
 		block body_end

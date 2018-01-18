@@ -1,2 +1,23 @@
 header
-	h1= welcome
+	nav.navbar.navbar-toggleable-md.navbar-dark.absolute-top
+		.container
+			button.navbar-toggler.navbar-toggler-right(type='button', data-toggle='collapse', data-target='#navbarNav', aria-controls='navbarNav', aria-expanded='false', aria-label='Toggle navigation')
+				span.navbar-toggler-icon
+			a.navbar-brand(href='#') 
+				span.green Green&nbsp
+				| Investment & Consulting	
+			#navbarNav.collapse.navbar-collapse
+				ul.navbar-nav.ml-auto
+					li.nav-item.active
+						a.nav-link(href='#')
+							| Home 
+							span.sr-only (current)
+					li.nav-item
+						a.nav-link(href='#') About
+					li.nav-item
+						a.nav-link(href='#') Services
+					li.nav-item
+						a.nav-link(href='#') Portofolio 
+					li.nav-item
+						a.nav-link(href='#') Contact	
+						
